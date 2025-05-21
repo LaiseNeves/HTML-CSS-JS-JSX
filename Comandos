@@ -27,9 +27,6 @@ ________________________________________________________________________________
 /> tag de fechar
 tem as tags vazias: <br>
 
-Elemento para deixar em italico <em>texto</em>
-Elemento para deixar em negrito <strong>texto</strong>
-
 Arredondar borda
 border-radius: 10px 20px 30px;
 
@@ -80,9 +77,45 @@ border-radius: Define os cantos arredondados da caixa.
 text-align: Alinha o texto dentro da caixa.
 display: Define como o elemento é exibido (por exemplo, block, inline, inline-block). 
 
+____________________________________________________________________________________________________________________________________________________________________
+Opcoes de fontes: 
+____________________________________________________________________________________________________________________________________________________________________
+
+Elemento para deixar em italico <em>texto</em>
+Elemento para deixar em negrito <strong>texto</strong>
+
+Para alterar a cor e a fonte no HTML, é necessário utilizar CSS. A propriedade color define a cor do texto, e a propriedade font-family especifica a fonte a ser utilizada. 
+É possível aplicar CSS inline, dentro de um elemento <style>, ou em um arquivo CSS externo
+
+color = cor do texto
+font-family = fonte 
+
+-->Alterar a cor do texto
+CSS inline:
+   <p style="color: blue;">Este texto está em azul.</p>
+
+CSS em um elemento <style>:
+   <style>
+     p {
+       color: green;
+     }
+   </style>
+   <p>Este texto está em verde.</p>
+
+CSS em um arquivo externo:
+   <link rel="stylesheet" href="style.css">
+   <p>Este texto está com a cor definida no arquivo CSS.</p>
+
+No arquivo style.css:
+   p {
+     color: red;
+   }
+
+
+
 
 ___________________________________________________________________________________________________________________________________________________________________
-Colocar imagem ao lado da outra
+Colocar imagem ao lado da outra:
 ___________________________________________________________________________________________________________________________________________________________________
 
 Para colocar uma imagem ao lado da outra em HTML e CSS, você pode usar o CSS para modificar a propriedade display das imagens para inline-block ou usar o sistema de 
