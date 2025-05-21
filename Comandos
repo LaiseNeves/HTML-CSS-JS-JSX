@@ -1,9 +1,42 @@
 Comandos: 
 
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+Bases:
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando LadingPage</title>
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>subscribe</p>
+     <button>subscribe</button>
+  </body>
+</html>
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+                      
 < > tag
 < tag de abrir 
 /> tag de fechar
-tem as tags vazias: 
+tem as tags vazias: <br>
+
+Elemento para deixar em italico <em>texto</em>
+Elemento para deixar em negrito <strong>texto</strong>
 
 Arredondar borda
 border-radius: 10px 20px 30px;
+
+Atributos adicionam informacoes adicionais as tags
+
+Exemplo de como por link
+<a href="https://www.mimo.org/r/lisa.html">Click to visit my web site!</a>
+href é um atributo
+
+Modelo de botao 
+<button>Botao</button>
+
