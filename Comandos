@@ -80,3 +80,59 @@ border-radius: Define os cantos arredondados da caixa.
 text-align: Alinha o texto dentro da caixa.
 display: Define como o elemento é exibido (por exemplo, block, inline, inline-block). 
 
+
+___________________________________________________________________________________________________________________________________________________________________
+Colocar imagem ao lado da outra
+___________________________________________________________________________________________________________________________________________________________________
+
+Para colocar uma imagem ao lado da outra em HTML e CSS, você pode usar o CSS para modificar a propriedade display das imagens para inline-block ou usar o sistema de 
+layout flexbox. O método display: inline-block é simples e eficaz para casos em que você precisa de mais controle sobre o espaçamento entre as imagens. Para o método 
+flexbox, você pode envolver as imagens em um contêiner e configurar o CSS para alinhar os itens horizontalment
+
+-->Metodo inline-block:
+
+HTML
+    <img src="imagem1.jpg" alt="Descrição da imagem 1">
+    <img src="imagem2.jpg" alt="Descrição da imagem 2">
+
+CSS
+    img {
+      display: inline-block; /* Permite que as imagens sejam tratadas como blocos de texto, permitindo que fiquem na mesma linha */
+      vertical-align: top; /* Alinha as imagens no topo para evitar que elas se movam para baixo */
+      width: 50%; /* Define a largura de cada imagem para ocupar metade da tela */
+      margin-right: 10px; /* Adiciona um espaço de 10 pixels entre as imagens */
+    }
+
+
+
+-->Método flex-box
+
+HTML
+    <div class="imagens">
+        <img src="imagem1.jpg" alt="Descrição da imagem 1">
+        <img src="imagem2.jpg" alt="Descrição da imagem 2">
+    </div>
+
+
+CSS
+    .imagens {
+      display: flex; /* Define o contêiner como um layout flexbox */
+      flex-direction: row; /* Alinha os itens horizontalmente */
+      justify-content: space-between; /* Distribuí espaço entre os itens */
+      align-items: center; /* Alinha os itens verticalmente */
+    }
+
+    .imagens img {
+      width: 48%; /* Define a largura das imagens */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+
+Explicação:
+- display: inline-block: Esta propriedade permite que as imagens se comportem como blocos de texto, permitindo que sejam colocadas na mesma linha. Ao combinar inline-block com a propriedade vertical-align, você pode ajustar a posição vertical das imagens para que não se movam para baixo.
+- width: Define a largura das imagens. No exemplo acima, as imagens ocupam 50% da largura do contêiner, mas você pode ajustar o valor conforme necessário.
+- margin-right: Adiciona um espaço entre as imagens. No exemplo acima, há 10 pixels de espaço entre as imagens.
+- display: flex: Define o contêiner como um layout flexbox, permitindo que você controle a forma como os elementos são alinhados e espaçados.
+- flex-direction: row: Define que os itens serão dispostos horizontalmente, lado a lado.
+- justify-content: space-between: Distribuí espaços entre os itens, alinhando-os nas extremidades do contêiner.
+- align-items: center: Alinha os itens verticalmente no centro do contêiner.
+- width e height no flexbox: Define a largura e altura das imagens. No exemplo acima, a altura é definida como auto para manter a proporção da imagem. 
