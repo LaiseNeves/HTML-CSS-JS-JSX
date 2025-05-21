@@ -202,7 +202,8 @@ CSS
     }
 
 Explicação:
-- display: inline-block: Esta propriedade permite que as imagens se comportem como blocos de texto, permitindo que sejam colocadas na mesma linha. Ao combinar inline-block com a propriedade vertical-align, você pode ajustar a posição vertical das imagens para que não se movam para baixo.
+- display: inline-block: Esta propriedade permite que as imagens se comportem como blocos de texto, permitindo que sejam colocadas na mesma linha. 
+Ao combinar inline-block com a propriedade vertical-align, você pode ajustar a posição vertical das imagens para que não se movam para baixo.
 - width: Define a largura das imagens. No exemplo acima, as imagens ocupam 50% da largura do contêiner, mas você pode ajustar o valor conforme necessário.
 - margin-right: Adiciona um espaço entre as imagens. No exemplo acima, há 10 pixels de espaço entre as imagens.
 - display: flex: Define o contêiner como um layout flexbox, permitindo que você controle a forma como os elementos são alinhados e espaçados.
