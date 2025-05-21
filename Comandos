@@ -1,0 +1,9 @@
+Comandos: 
+
+< > tag
+< tag de abrir 
+/> tag de fechar
+tem as tags vazias: 
+
+Arredondar borda
+border-radius: 10px 20px 30px;
