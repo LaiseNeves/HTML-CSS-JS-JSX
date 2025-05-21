@@ -40,3 +40,41 @@ href é um atributo
 Modelo de botao 
 <button>Botao</button>
 
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+CAIXA BRANCA: 
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Para criar uma caixa branca em HTML com CSS, use a tag <div> no HTML e aplique estilos CSS para definir a caixa como um retângulo branco com bordas, se necessário. 
+
+Código HTML:
+<div class="box">
+  <!-- Conteúdo da caixa aqui -->
+</div>
+Código CSS:
+Código
+
+
+Codigo CSS:
+.box {
+  width: 200px;       /* Largura da caixa */
+  height: 100px;      /* Altura da caixa */
+  background-color: white; /* Cor de fundo da caixa (branco) */
+  border: 1px solid black; /* Borda da caixa (opcional) */
+  padding: 10px;      /* Preenchimento interno da caixa */
+}
+
+
+Explicação:
+- <div>: A tag <div> cria um contêiner genérico para outros elementos HTML, ideal para criar caixas.
+- class="box": Define uma classe para o elemento, permitindo que o CSS o selecione.
+- width e height: Definem a largura e altura da caixa em pixels ou outras unidades.
+- background-color: white: Define a cor de fundo da caixa como branco.
+- border: 1px solid black: (Opcional) Define uma borda ao redor da caixa, com 1 pixel de espessura, sólida e de cor preta. Você pode alterar a cor e o estilo da borda.
+- padding: 10px: (Opcional) Define o espaçamento interno da caixa, ou seja, a distância entre o conteúdo e a borda (se houver).
+
+- Outras propriedades CSS úteis:
+margin: Define o espaço externo ao redor da caixa, que a separa de outros elementos.
+border-radius: Define os cantos arredondados da caixa.
+text-align: Alinha o texto dentro da caixa.
+display: Define como o elemento é exibido (por exemplo, block, inline, inline-block). 
+
