@@ -111,8 +111,49 @@ No arquivo style.css:
      color: red;
    }
 
+-->Alterar a fonte do texto
+
+Escolhendo a fonte:
+
+CSS inline:
+   <p style="font-family: Arial, sans-serif;">Este texto está na fonte Arial.</p>
 
 
+CSS em um elemento <style>:
+   <style>
+     p {
+       font-family: "Courier New", Courier, monospace;
+     }
+   </style>
+   <p>Este texto está na fonte Courier New.</p>
+
+
+CSS em um arquivo externo:
+   <link rel="stylesheet" href="style.css">
+   <p>Este texto está com a fonte definida no arquivo CSS.</p>
+
+
+No arquivo style.css:
+   p {
+     font-family: Georgia, serif;
+   }
+
+
+
+___________________________________________________________________________________________________________________________________________________________________
+Exemplos de cores e fontes:
+___________________________________________________________________________________________________________________________________________________________________
+
+Cores:
+color: blue; (azul)
+color: #FF0000; (vermelho, hexadecimal)
+color: rgb(0, 255, 0); (verde, RGB)
+color: hsl(120, 100%, 50%); (verde, HSL)
+
+Fontes:
+font-family: Arial, sans-serif; (Arial, ou outra fonte sem serifa)
+font-family: "Times New Roman", Times, serif; (Times New Roman, ou outra fonte serifada)
+font-family: "Courier New", Courier, monospace; (Courier New, ou outra fonte de código)
 
 ___________________________________________________________________________________________________________________________________________________________________
 Colocar imagem ao lado da outra:
