@@ -27,6 +27,10 @@ ________________________________________________________________________________
 /> tag de fechar
 tem as tags vazias: <br>, <img> 
 
+*os textos entre as tags de abertura e fechamento deum botao, por ex, se torna o rótulo do botão
+
+tags: <p>
+
 existe os atributos: width e height
 
 Arredondar borda
