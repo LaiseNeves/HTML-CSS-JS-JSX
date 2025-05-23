@@ -1,0 +1,137 @@
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+01 Exemplo estrutura:
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+---css----
+Copiar
+Editar
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+---html---
+<div class="container">
+  <div>Olá</div>
+</div>
+
+------------------------------------------------
+HTML
+<div class="container">
+  <div class="box">A</div>
+  <div class="box">B</div>
+  <div class="box">C</div>
+</div>
+
+CSS
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.box {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+________________________________________________________________________________________________________________________________________________________________________________________________________
+
+________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1) Ativar o Flexbox
+
+.container {
+  display: flex;
+}
+
+
+2) Direção dos itens – flex-direction
+ Valor      Descrição               
+--------------------------------------
+ `row`      Itens em linha (padrão) 
+ `column`   Itens em coluna   
+--------------------------------------
+
+.container {
+  display: flex;
+  flex-direction: row; /* ou column */
+}
+
+
+3)Alinhamento no eixo principal – justify-content
+--------------------------------------------------- 
+|Valor             | Alinha como?              
+| `flex-start`    | No início                 
+| `center`        | No centro                 
+| `flex-end`      | No final                  
+| `space-between` | Espaço entre os itens     
+| `space-around`  | Espaço ao redor dos itens 
+---------------------------------------------------
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+4) Alinhamento no eixo cruzado – align-items
+
+-----------------------------------------------
+| Valor        | Alinha como?                 |
+| ------------ | ---------------------------- |
+| `stretch`    | Estica os itens (padrão)     |
+| `flex-start` | Alinha ao topo (ou esquerda) |
+| `center`     | Alinha ao centro             |
+| `flex-end`   | Alinha ao fim (ou direita)   |
+----------------------------------------------
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+
+5) Espaço entre os itens – gap
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+
+ 6) Exemplo completo
+
+HTML
+<div class="container">
+  <div class="box">A</div>
+  <div class="box">B</div>
+  <div class="box">C</div>
+</div>
+
+CSS
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.box {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+
