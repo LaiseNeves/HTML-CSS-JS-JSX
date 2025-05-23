@@ -1,0 +1,55 @@
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+🧱 1. Boa noção de estrutura
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+= saber como organizar o conteúdo da página
+Você tem boa noção de estrutura quando:
+
+Usa div, section, header, main, etc. de forma semântica (não só <div> pra tudo)
+
+Agrupa elementos de forma lógica (ex: tudo relacionado ao login está junto)
+
+Usa componentes pequenos e reutilizáveis (em React)
+
+Mantém o código limpo, com indentação e nomes claros (boxStyle, logoContainerStyle, etc.)
+
+
+Treinar:
+
+Veja o HTML de sites reais: botão direito > "Inspecionar"
+
+Recrie UIs de sites simples (como landing pages do Google ou GitHub)
+
+Estude sobre componentes atômicos e design patterns de UI (ex: Atomic Design)
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+🎨 2. Boa noção de estilo 
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+= saber como deixar bonito e funcional
+
+Você tem boa noção de estilo quando:
+
+  -Usa espaçamentos coerentes e harmoniosos (padding, margin)
+  -Escolhe boas cores e contrastes (acessibilidade visual)
+  -Alinha tudo direito usando Flexbox, Grid ou sistemas de layout
+  -Cria responsividade básica (mobile e desktop)
+  -Evita exageros como fontes gigantes ou padding desproporcional
+
+
+Treinar:
+
+  -Usar ferramentas como Figma pra estudar UIs e espaçamentos
+  -Ler sistemas de design famosos: Material Design, Ant Design, Tailwind
+  -Tentar replicar interfaces conhecidas (Instagram, LinkedIn, Amazon etc.)
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+3 Ferramenta	
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Figma	---> Estudar design e espaçamento
+CodePen / StackBlitz	---> Testar ideias rápidas
+Ant Design / Material UI	---> Ver exemplos de UI bem estruturados
+React DevTools	---> Entender a estrutura de componentes
+Lighthouse (Chrome)	---> Analisar acessibilidade, performance, boas práticas
+
