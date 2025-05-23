@@ -134,13 +134,15 @@ CSS
 
 
 ___________________________________________________________________________________________________________________________________________________________
-FROGGY
+🐸FROGGY
 ___________________________________________________________________________________________________________________________________________________________
 
 https://flexboxfroggy.com/ 
 
 
-escrevendo código CSS! 
+escrevendo código CSS!
+
+1️⃣JUSTIFY-CONTENT
 Guie este sapo até a vitória-régia à direita usando a justify-contentpropriedade, que alinha os itens horizontalmente e aceita os seguintes valores:
 
 *flex-start: Os itens são alinhados ao lado esquerdo do contêiner.
