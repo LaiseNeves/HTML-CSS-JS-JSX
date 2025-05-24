@@ -4,7 +4,9 @@ ________________________________________________________________________________
 
 Bem-vindo ao Grid Garden, onde você escreve código CSS para cultivar sua horta de cenouras! 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1️⃣PROPRIEDADE GRID-COLUMN-START 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Regue apenas as áreas que têm cenouras usando a grid-column-start propriedade.
 Por exemplo, grid-column-start: 3;regará a área começando na 3ª linha da grade vertical, que é outra maneira de dizer a 3ª borda vertical da esquerda na grade.
 
@@ -31,3 +33,51 @@ grid-column-start: 3
 #água {
 grid-column-start: 3
 }
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2️⃣GRID-COLUMN-END
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Quando grid-column-startusado sozinho, o item da grade, por padrão, abrange exatamente uma coluna. No entanto, você pode estender o item para várias colunas adicionando a grid-column-endpropriedade .
+
+--Versao ING----------------------------------------
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+grid-column-end:4
+}
+
+--Versao BR-----------------------------------------
+#jardim {
+  exibição: grade;
+  colunas de modelo de grade: 20% 20% 20% 20% 20%;
+  linhas de modelo de grade: 20% 20% 20% 20% 20%;
+}
+
+#água {
+  início-de-coluna-de-grade: 1;
+grid-column-end:4
+}
+
+--------------------------------------------------
+
+Ao parear grid-column-starte grid-column-end, você pode presumir que o valor final precisa ser maior que o valor inicial. Mas não é o caso!
+
+Tente definir grid-column-endum valor menor que 5 para regar suas cenouras.
+
+
+
+
+
+
+
+
+
+
+
+
