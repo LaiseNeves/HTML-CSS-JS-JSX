@@ -66,14 +66,45 @@ grid-column-end:4
 grid-column-end:4
 }
 
---------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+grid-column-start
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+***Quando grid-column-startusado sozinho, o item da grade, por padrão, abrange exatamente uma coluna. No entanto, você pode estender o item para várias colunas adicionando a grid-column-end
+propriedade .
 
-Ao parear grid-column-starte grid-column-end, você pode presumir que o valor final precisa ser maior que o valor inicial. Mas não é o caso!
+Usando grid-column-end, regue todas as cenouras, evitando a terra. Não queremos desperdiçar água! Observe que as cenouras começam na 1ª linha vertical da grade e terminam na 4ª.
+
+--Versao ING----------------------------------------
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+grid-column-end:4
+}
+-----------------------------------------------------
+
+
+Ao parear grid-column-start e grid-column-end, você pode presumir que o valor final precisa ser maior que o valor inicial. Mas não é o caso!
 
 Tente definir grid-column-endum valor menor que 5 para regar suas cenouras.
 
 
+--Versao ING----------------------------------------
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
 
+#water {
+  grid-column-start: 5;
+grid-column-end:2
+}
+-------------------------------------------------
 
 
 
