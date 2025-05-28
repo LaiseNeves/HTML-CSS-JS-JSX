@@ -1,0 +1,144 @@
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+INTRODUCAO/ INICIO
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+- As aplicações React são compostas por componentes. Um componente é uma parte da IU (interface do usuário) que possui sua própria lógica e aparência. Um componente pode ser tão pequeno quanto um botão, 
+ou tão grande quanto uma página inteira.
+
+- Componentes do React são funções JavaScript que retornam marcação (markup):
+
+---Exemplo/Modelo-------------------------------
+function MyButton() {
+  return (
+    <button>Eu sou um botão</button>
+  );
+}
+
+------------------------------------------------
+
+- Agora que você declarou MyButton, você pode aninhá-lo em outro componente:
+
+---Exemplo/Modelo-------------------------------
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Bem-vindo ao meu aplicativo</h1>
+      <MyButton />
+    </div>
+  );
+}
+------------------------------------------------
+
+- Repare que <MyButton /> começa com letra maiúscula. 
+- É dessa forma que você identifica um componente React. 
+- Os nomes dos componentes React sempre devem COMECAR com letra MAIÚSCULA, enquanto as tags HTML devem ser em MINÚSCULAS
+
+REACT ---> Comeca c LETRA MAIÚSCULA
+HTML ---> Comeca c LETRA MINÚSCULAS
+
+
+---Exemplo/Modelo-------------------------------
+function MyButton() {
+  return (
+    <button>
+      Eu sou um botão
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Bem-vindo ao meu aplicativo</h1>
+      <MyButton />
+    </div>
+  );
+}
+------------------------------------------------
+
+A palavra-chave export default especifica o componente principal no arquivo. 
+
+🌐https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export
+🌐https://javascript.info/import-export 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📝 Escrevendo marcações (markup) com JSX
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- A sintaxe de marcação que você viu acima é chamada de JSX. Ela é opcional, mas a maioria dos projetos React utiliza JSX pela sua conveniência.
+- Todas as todas as ferramentas de desenvolvimento que recomendamos suportam JSX prontamente.
+
+- JSX é mais rigoroso do que HTML. 
+  - Você precisa fechar as tags, como <br />
+  - Seu componente não pode retornar várias tags JSX separadas.
+  - Você precisa envolvê-las em um elemento pai compartilhado, como um <div>...</div> ou um <>...</> vazio:
+
+
+---Exemplo/Modelo-------------------------------
+function AboutPage() {
+  return (
+    <>
+      <h1>Sobre</h1>
+      <p>Olá.<br />Como vai?</p>
+    </>
+  );
+}
+-------------------------------------------------
+
+Se você tiver muito HTML para converter para JSX, você pode usar um conversor online.
+🌐 https://transform.tools/html-to-jsx 
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🎨 Adicionando estilos
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- No React, você define uma classe CSS usando className, que funciona da mesma forma que o atributo HTML class:
+
+---Exemplo/Modelo-------------------------------
+
+<img className="avatar" />
+
+-------------------------------------------------
+
+- Depois, você escreve o CSS para esse elemento em um arquivo CSS separado:
+
+---Exemplo/Modelo-------------------------------
+
+/* No seu arquivo CSS */
+.avatar {
+  border-radius: 50%;
+}
+-------------------------------------------------
+
+- O React não especifica como você adiciona arquivos CSS. 
+- No caso mais simples, você adicionará uma tag <link> ao seu HTML.
+- Se você estiver usando uma ferramenta de construção ou um framework, consulte sua documentação para aprender como adicionar um arquivo CSS ao seu projeto.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Exibindo dados 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- JSX permite que você coloque marcação dentro do JavaScript.
+- As chaves permitem que você insira expressões JavaScript.
+- sso é útil para incorporar variáveis do seu código e exibi-las para o usuário. 
+**Por exemplo, isso irá exibir user.name:
+
+---Exemplo/Modelo-------------------------------
+return (
+  <h1>
+    {user.name}
+  </h1>
+);
+-------------------------------------------------
+
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+COMPONENTES 
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Seu Primeiro Componente
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
