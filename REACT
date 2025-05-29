@@ -131,6 +131,54 @@ return (
 );
 -------------------------------------------------
 
+- Você também pode incorporar expressões JavaScript a partir de atributos JSX, mas você deve usar chaves em vez de aspas. Por exemplo, className="avatar" passa a string "avatar" como a classe CSS, 
+mas src={user.imageUrl} lê o valor da variável JavaScript user.imageUrl, e então passa esse valor como o atributo src:
+
+---Exemplo/Modelo-------------------------------
+return (
+  <img
+    className="avatar"
+    src={user.imageUrl}
+  />
+);
+-------------------------------------------------
+
+Você também pode colocar expressões mais complexas dentro das chaves do JSX, por exemplo, concatenação de strings
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Renderização condicional 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+No React, não existe uma sintaxe especial para escrever condições. Você usará as mesmas técnicas que utiliza ao escrever código JavaScript convencional. Por exemplo, você pode usar uma instrução if 
+para incluir JSX condicionalmente:
+
+---Exemplo/Modelo-------------------------------
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+return (
+  <div>
+    {content}
+  </div>
+);
+-------------------------------------------------
+
+- Se preferir um código mais compacto, você pode utilizar o operador condicional ?. Ao contrário do if, ele funciona dentro do JSX:
+- Quando você não precisa do caso else, você pode usar uma sintaxe mais curta com o operador lógico &&:
+- Todas essas abordagens também funcionam para especificar atributos condicionalmente. Se você não estiver familiarizado com algumas dessas sintaxes JavaScript, pode começar sempre 
+  usando if...else.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Renderizando listas 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Você irá depender de recursos do JavaScript como o loop for e a função map() de arrays
+
+
+
 
 
 
