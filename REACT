@@ -203,6 +203,79 @@ ________________________________________________________________________________
 Os Componentes são um dos conceitos centrais do React. Eles são a base das interfaces de usuário (UI), o que os torna o lugar perfeito para começar 
 sua jornada com React!
 
+📌Pontos importantes:
+- O React permite que você crie componentes, elementos de UI reutilizáveis para sua aplicação.
+- Em uma aplicação React, cada parte da UI é um componente.
+- Os componentes do React são funções comuns do JavaScript, mas com duas diferenças importantes:
+    - Seus nomes sempre começam com letra maiúscula.
+    - Eles retornam JSX.
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Seu Primeiro Componente
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Um componente React é uma função JavaScript que permite você adicionar tags HTML. 
+
+
+🛠️ COMO CONSTRUIR COMPONENTE :
+
+1️⃣ Passo 1: Exportar o componente 
+- O prefixo export default é uma sintaxe padrão do JavaScript (não específica do React).
+- Ele permite que você marque a função principal em um arquivo para que você possa mais tarde importá-la de outros arquivos. 
+- Sobre exportacao e importacao https://pt-br.react.dev/learn/importing-and-exporting-components 
+
+2️⃣ Passo 2: Definir a função 
+- Com a sintaxe function Profile() { } você está definindo uma função JavaScript chamada Profile.
+❗ Os componentes do React são funções comuns do JavaScript, mas seus nomes devem começar com letra MAIÚSCULA ou não funcionarão!
+
+3️⃣ Passo 3: Adicionar HTML
+- O componente retorna uma tag <img /> com os atributos src e alt.
+- O <img /> é escrito como HTML, mas na verdade, é o JavaScript que está por trás! Essa sintaxe é chamada JSX e permite usar 
+  tags HTML dentro do JavaScript.
+- As instruções de retorno podem ser escritas todas em uma linha, como neste componente:
+
+return <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />;
+
+- Mas se seu HTML não estiver na mesma linha que a declaração return, você deve colocá-la entre parênteses:
+
+return (
+  <div>
+    <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
+  </div>
+);
+
+❗ Sem parênteses, qualquer código nas linhas após return será ignorado!
+
+4️⃣ Usando um componente:
+- Agora que você definiu seu componente Profile, você pode colocá-lo dentro de outros componentes. 
+- Por exemplo, você pode exportar um componente Gallery que usa várias vezes o componente Profile:
+
+function Profile() {
+  return (
+    <img
+      src="https://i.imgur.com/MK3eW3As.jpg"
+      alt="Katherine Johnson"
+    />
+  );
+}
+
+export default function Gallery() {
+  return (
+    <section>
+      <h1>Cientistas incríveis</h1>
+      <Profile />
+      <Profile />
+      <Profile />
+    </section>
+  );
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Importando e Exportando Componentes
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+- A magia dos componentes reside na sua habilidade de reutilização: você pode criar um componente que é composto por outros componentes. 
+- Mas conforme você aninha mais e mais componentes, faz sentido começar a dividi-los em arquivos diferentes. 
+- Isso permite que você mantenha seus arquivos fáceis de explorar e reutiliza-los em mais lugares.
+
+
+
