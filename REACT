@@ -1,6 +1,7 @@
 ____________________________________________________________________________________________________________________________________________________________________________________________________________
 INTRODUCAO/ INICIO
 ____________________________________________________________________________________________________________________________________________________________________________________________________________
+🌐 https://pt-br.react.dev/learn
 
 - As aplicações React são compostas por componentes. Um componente é uma parte da IU (interface do usuário) que possui sua própria lógica e aparência. Um componente pode ser tão pequeno quanto um botão, 
 ou tão grande quanto uma página inteira.
@@ -176,9 +177,23 @@ return (
 Renderizando listas 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - Você irá depender de recursos do JavaScript como o loop for e a função map() de arrays
+- Dentro do seu componente, use a função map() para transformar um array de produtos em um array de itens <li>:
+- Normalmente, uma chave deve vir dos seus dados, como um ID de banco de dados. O React utiliza essas chaves para entender as mudanças que ocorrem se você posteriormente inserir, excluir ou reordenar 
+  os itens.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Respondendo a eventos 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Você pode responder a eventos declarando funções de event handler dentro dos seus componentes:
+- Note como onClick={handleClick} não tem parênteses no final! Não chame a função de manipulador de evento: você só precisa passá-la. O React chamará seu manipulador de evento quando o usuário 
+  clicar no botão.
 
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Atualizando a tela
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Normalmente, você vai querer que seu componente “lembre” algumas informações e as exiba. Por exemplo, talvez você queira contar o número de vezes que um botão é clicado. Para fazer isso, adicione 
+  estados ao seu componente.
 
 
 
