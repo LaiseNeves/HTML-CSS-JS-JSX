@@ -12,3 +12,11 @@ Comandos e coisas úteis sobre HTML, CSS, JS, React (JSX) etc
 - (CSS) Grid: https://cssgridgarden.com/
 
 - (CSS) Flex: https://codepip.com/games/flexbox-froggy/
+
+📍 Componentes Compartilhados prontos para uso: 
+
+- https://ant.design/
+
+- https://chakra-ui.com/
+
+- https://mui.com/material-ui/
