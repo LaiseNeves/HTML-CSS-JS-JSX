@@ -1,0 +1,40 @@
+____________________________________________________________________________________________________________________________________________________________
+JAVASCRIPT
+____________________________________________________________________________________________________________________________________________________________
+
+-  JavaScript , uma linguagem de codificação versátil.
+-  Linguagem de programação que alimenta sites e aplicativos dinâmicos.
+-  Sites dinâmicos precisam memorizar informações para exibi-las ou alterá-las. Para isso, o JavaScript possui variáveis .
+-  Assim como as caixas de mudança, as variáveis ​​têm conteúdo e nomes que nos dizem o que há dentro.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+CRIANDO VARIAVEIS
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Usamos let, e constpara criar variáveis.
+let
+const
+
+-  Cada variável precisa de um nome . 
+-  Os nomes das variáveis ​​precisam ser palavras simples e, portanto, não devem ter espaços.
+
+let city
+ 
+-  Para criar nomes de variáveis ​​com várias palavras, usamos camel case . 
+
+let homeCity
+
+-  Para nos ajudar a entender o que há dentro de uma variável, escolhemos nomes descritivos.
+
+const  windyCity
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+USANDO VARIAVEIS
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+ 
