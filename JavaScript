@@ -32,9 +32,9 @@ const  windyCity
 USANDO VARIAVEIS
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+- Podemos adicionar valores de string junto com um + sinal.
 
+"Followers:" + "55";
 
-
-
-
+- Chamamos a adição de valores de string de expressão porque ela cria um único valor de string.
  
