@@ -1,5 +1,5 @@
 ____________________________________________________________________________________________________________________________________________________________
-JAVASCRIPT
+JAVASCRIPT - SEÇÃO 1. Noções básicas de JavaScript
 ____________________________________________________________________________________________________________________________________________________________
 
 -  JavaScript , uma linguagem de codificação versátil.
@@ -138,10 +138,66 @@ USANDO VERDADEIRO E/OU FALSO (BOOLEANO) Pt.02
 
 - Quando mudamos um valor para seu oposto com !, nós o negamos.
 
+console.log(!true);
+-----> Console output: false 
+
+- O ! operador anterior a  false também altera seu valor. Se um valor não for false, ele terá que ser true.
+
+console.log(!false);
+-----> Console output: True
+
+- Podemos usar o ! operador com variáveis ​​para negar os valores que elas armazenam.
+
+const isMorning = true;
+console.log(! isMorning);
+-----> Console output: false 
+
+- Também podemos salvar uma negação inteira em outra variável.
+- Crie a variável isEveninge use !para mudar isMorningpara false.
+
+const isMorning = true;
+const isEvening = ! isMorning;
+console.log(isEvening);
+-----> Console output: false 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+VEERIFICANDO A IGUALDADE NÚMERICA Pt.1
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Aprendemos como criar e armazenar valores, mas como compará-los?
+- Precisamos comparar números em situações como verificar se o PIN inserido por um usuário corresponde ao PIN salvo.
+
+const enteredPin = 5448;
+const expectedPin = 5440;
+
+✨ Para comparar se dois números são iguais, usamos o operador de igualdade , ===.
+
+5 === 5
+
+- Ao comparar, há apenas dois resultados: trueou false.
+
+- Quando comparamos os mesmos números com o operador de igualdade, o resultado é true.
+
+console.log(10 === 10);
+
+- Quando comparamos dois números diferentes com o operador de igualdade, o resultado é false.
+
+console.log(9 === 10);
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-TIPOS E COMPARACOES 
+VEERIFICANDO A IGUALDADE NÚMERICA Pt.2
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+JAVASCRIPT - SEÇÃO 2. TIPOS E COMPARACOES 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
