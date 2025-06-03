@@ -100,7 +100,7 @@ console.log("Followers:" + numberOfFollowers);
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-USANDO VERDADEIRO OU FALSO (BOOLEANO)
+USANDO VERDADEIRO E/OU FALSO (BOOLEANO) Pt.01
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 - Há um valor especial que não é uma string nem um número: true.
 - Não há aspas e não é um valor numérico.
@@ -117,10 +117,32 @@ USANDO VERDADEIRO OU FALSO (BOOLEANO)
     console.log(correct);
 
 
+✨ false é outro valor especial e o oposto de true. Podemos usá-lo como true.
+
+    console.log("Device charged");
+    const status = false;
+    console.log(status);
+
+    console.log("Auto update");
+    
+    console.log(false);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+USANDO VERDADEIRO E/OU FALSO (BOOLEANO) Pt.02
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Um ❗ sinal antes de true faz com que a expressão resulte em false
+- Se algo não é verdadeiro, tem que ser falso.
+
+📌 O ❗ sinal é o operador de negação . Ele transforma valores em seus opostos .
+
+- Quando mudamos um valor para seu oposto com !, nós o negamos.
 
 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+TIPOS E COMPARACOES 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
