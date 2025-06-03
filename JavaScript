@@ -11,7 +11,7 @@ ________________________________________________________________________________
 CRIANDO VARIAVEIS
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-- Usamos let, e constpara criar variáveis.
+- Usamos let, e const para criar variáveis.
 let
 const
 
@@ -37,4 +37,103 @@ USANDO VARIAVEIS
 "Followers:" + "55";
 
 - Chamamos a adição de valores de string de expressão porque ela cria um único valor de string.
- 
+- Adicione a expressão entre parênteses de console.log().
+
+console.log("Followers:" + "55");
+
+- Quando expressões contêm variáveis, elas usam os valores nas variáveis.
+
+const followers = "55";
+"Followers:" + followers;
+
+- Podemos usar console.log() para ver os resultados das expressões.
+- console.log() = print() 
+
+const numberOfFollowers = "55";
+console.log("Followers:" + numberOfFollowers);
+
+- Como as expressões se tornam valores, podemos atribuí-las às variáveis ​​da mesma forma que os valores.
+
+   const label = "Posts:" + "13";
+   console.log(label);
+
+   const temperature = "14";
+   console.log(temperature + " degrees");
+
+   const title = "Ms. ";
+   const name = "Irene";
+   console.log(title + name);
+
+   const numberOfLikes = "40 ";
+   console.log(numberOfLikes + "likes");
+
+❗ Sempre tem que colocar ; ❗
+
+
+---NÚMEROS---
+- Existem outros tipos de valores também, como números , que NÃO são delimitados por aspas duplas.
+
+   const numberOfLikes = 5;
+
+- Também podemos criar expressões com números. Somamos os números com o +sinal e os subtraímos uns dos outros com o -sinal.
+
+   const numberOfLikes = 5 + 1;
+   console.log(numberOfLikes);
+
+- Usamos o * sinal para multiplicar números e o / sinal para dividir números.
+
+   const percent = 0.5 * 100;
+   console.log(percent);
+
+- Quando armazenamos números em variáveis, também podemos usá-las para cálculos.
+
+   const numberOfSteps = 70;
+   console.log("You're on step:");
+   console.log(numberOfSteps + 1);
+
+- Como as expressões se tornam valores, podemos armazenar os resultados dos cálculos em variáveis.
+
+   const private = 3;
+   const public = 10;
+   const totaL = private + public;
+   console.log("Total posts: " + total);
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+USANDO VERDADEIRO OU FALSO (BOOLEANO)
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+- Há um valor especial que não é uma string nem um número: true.
+- Não há aspas e não é um valor numérico.
+
+✨true é ótimo para situações como verificar se um interruptor está ligado ou se um recurso está habilitado
+
+    console.log("Allow updates");
+    console.log(true);
+
+- Podemos armazenar trueem uma variável algo como uma string ou um número.
+- Armazene trueem uma variável e exiba-a no console.
+
+    const correct = true;
+    console.log(correct);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
