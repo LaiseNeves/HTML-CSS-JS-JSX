@@ -189,6 +189,27 @@ console.log(9 === 10);
 VEERIFICANDO A IGUALDADE NÚMERICA Pt.2
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
+- Para verificar se um número não é igual a outro número, usamos o operador de desigualdade , !==.
+
+console.log(1!==10);
+
+- Podemos armazenar o resultado de uma comparação com o operador de desigualdade em uma variável.
+
+const result = 1 !== 2;
+console.log(result);
+
+- Variáveis ​​também podem armazenar o resultado de comparações de igualdade.
+
+const result = 1 === 2;
+console.log(result);
+
+- Podemos comparar valores com variáveis ​​e variáveis ​​com outras variáveis.
+
+const one = 1;
+const two = 2;
+console.log(one===two);
+console.log(one !== two);
+
 
 
 
