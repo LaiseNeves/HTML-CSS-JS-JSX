@@ -1,0 +1,50 @@
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+Introdução ao CSS
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Estilizar páginas da web usando CSS
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Secao 01: Folha de Estilo e seletores básicos Pt.01
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Agora, passaremos a criar sites com ótima aparência com a ajuda de uma linguagem de estilo chamada CSS, abreviação de Cascading Style Sheets.
+
+- Para tornar páginas da web maiores mais gerenciáveis, podemos mover nosso CSS para uma folha de estilo ou um arquivo especial apenas para estilizar a página da web.
+
+- Comando utiizado no index.html abaixo: <link rel="stylesheet" href="style.css">
+
+[index.html]-----------------------------------------------------------------
+<!doctype html>
+<html>
+ <head>
+  
+<link rel="stylesheet" href="style.css">
+
+ </head>
+ <body>
+  <h1>Water Puns</h1>
+  <p> Why does water never laugh at jokes? It's not a fan of dry
+   humor. </p>
+ </body>
+</html>
+-------------------------------------------------------------------------------
+
+[style.css]-----------------------------------------------------------------
+h1 {
+ color: red;
+}
+
+p {
+ color: blue;
+}
+-------------------------------------------------------------------------------
+
+✨ Para incluir uma folha de estilo em um arquivo HTML, usamos o link elemento. 
+✨ <link> é um elemento vazio de fechamento automático e fica dentro do head elemento .
+
+
+
+
+
+
