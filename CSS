@@ -93,6 +93,7 @@ href
 - Dentro do arquivo CSS, especificamos qual elemento estilizar com um seletor de tags. Selecione a p⁠tag.
 - Em seguida, adicionamos uma chave de abertura, {, seguida de uma chave de fechamento,  }⁠.
 - Agora, qualquer declaração que adicionarmos será aplicada a todos pos elementos da página. Adicione a  color: blue⁠;⁠declaração.
+- Podemos adicionar outras declarações, como " background-color: pinkcontanto que estejam em outra linha".
 
 [index.html]-----------------------------------------------------------------
 <!doctype html>
@@ -111,11 +112,16 @@ href
 [style.css]-----------------------------------------------------------------
 p {
  color: blue;
+ background: grey; 
 }
 -------------------------------------------------------------------------------
 
 
+Como podemos aplicar um estilo a um elemento?
+R: Adicionando seu nome, chaves e as mudancas de estilo em uma folha de estilos.
 
+O que o hrefatributo faz?
+R: Permite que o link elemento encontre a folha de estilo. 
 
 
 
