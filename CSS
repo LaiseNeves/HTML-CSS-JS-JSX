@@ -6,7 +6,7 @@ Estilizar páginas da web usando CSS
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Secao 01: Folha de Estilo e seletores básicos Pt.01
+🎨 Secao 01: Folha de Estilo e seletores básicos Pt.01
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - Agora, passaremos a criar sites com ótima aparência com a ajuda de uma linguagem de estilo chamada CSS, abreviação de Cascading Style Sheets.
 
@@ -122,6 +122,206 @@ R: Adicionando seu nome, chaves e as mudancas de estilo em uma folha de estilos.
 
 O que o hrefatributo faz?
 R: Permite que o link elemento encontre a folha de estilo. 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Secao 01: Folha de Estilo e seletores básicos Pt.02
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Se quisermos que um estilo seja aplicado à página inteira, podemos usar o bodyseletor.
+
+- Definir a cor de fundo para blue;dentro da bodyregra define o fundo para todo o corpo.
+
+
+body{
+  background-color: blue;
+
+}
+
+- Estilos como color: white;quando definidos dentro da bodyregra serão aplicados a todos os elementos dentro da bodytag.
+
+body {
+ background-color: blue;
+ color: white;
+}
+
+- Podemos estilizar quantos elementos quisermos, desde que adicionemos um espaço entre as diferentes regras.
+
+body {
+ background-color: blue;
+ color: white;
+}
+
+h1{
+font-family: Helvetica;
+}
+
+- Usar a bodytag é uma das maneiras mais fáceis de adicionar regras sobrepostas em elementos. Aprenderemos sobre as outras maneiras em breve.
+
+[index.html]-----------------------------------------------------------------
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <h1>Venn Diagram Generator</h1>
+  <p>Learn how to create your own personal Venn Diagrams</p>
+  <img width="250" src="https://mimo.app/r/venn.png">
+ </body>
+</html>
+----------------------------------------------------------------------------
+
+[style.css]-----------------------------------------------------------------
+body {
+ background-color: cornSilk;
+}
+
+h1 {
+ font-family: Helvetica;
+ color: darkGray;
+}
+
+p {
+ color: gray;
+ font-weight: bold;
+ font-family: cursive;
+}
+--------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Secao 01: Folha de Estilo e seletores básicos Pt.03
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Se houver vários elementos do mesmo tipo em uma página da web, seletores como h1, h2ou palteram todos esses elementos.
+
+[index.html]-----------------------------------------------------------------
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <h1>Not On Time Magazine</h1>
+  <p> Always first with the last </p>
+  <h2>Car Trends</h2>
+  <p> Coal powered cars. The future? </p>
+  <h2>Fashion Latest</h2>
+  <p> Flared jeans </p>
+ </body>
+</html>
+--------------------------------------------------------------------------
+
+[style.css]-----------------------------------------------------------------
+h1 {
+ font: "Arial";
+ color: green;
+}
+
+h2 {
+ font: "Arial";
+ color: blue;
+}
+
+p {
+ font: "Arial";
+ font-weight: normal;
+}
+--------------------------------------------------------------------------
+
+- Se quisermos selecionar um ou mais elementos, podemos definir um classatributo para os elementos exatos que queremos alterar.
+
+- Na folha de estilo, podemos definir uma nova regra de classe com um .seguido do nome da classe. Como aqui com .gray-element.
+
+[index.html]-----------------------------------------------------------------
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <ol> TO DO: <li class="gray-element">Floss</li>
+   <li>Feed Cat</li>
+   <li class="gray-element">Nap</li>
+   <li>Plan holiday</li>
+   <li class="gray-element">Order tea</li>
+  </ol>
+ </body>
+</html>
+---------------------------------------------------------------------------
+
+[style.css]-----------------------------------------------------------------
+.gray-element {
+ background-color: lightgrey;
+}
+----------------------------------------------------------------------------
+
+- As regras da classe serão aplicadas a todos os elementos que tenham esse atributo de classe no htmlarquivo.
+
+- As classes não são únicas, então podemos definir a mesma classe para vários elementos. Como aqui, por exemplo, com class = "gray-element".
+
+[index.html]-----------------------------------------------------------------
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <ol> TO DO: <li class="gray-element">Floss</li>
+   <li>Feed Cat</li>
+   <li class="gray-element">Nap</li>
+   <li>Plan holiday</li>
+   <li 
+class = "gray-element" >Order tea</li>
+  </ol>
+ </body>
+</html>
+----------------------------------------------------------------------------
+
+[style.css]-----------------------------------------------------------------
+.gray-element {
+ background-color: lightGray;
+}
+----------------------------------------------------------------------------
+
+- Para definir uma classe como seletor em CSS, adicione um ponto final seguido do nome da classe. Neste caso, é .gray-element.
+
+[style.css]-----------------------------------------------------------------
+.gray-element{
+ background-color: lightGray;
+}
+----------------------------------------------------------------------------
+
+
+Como aplicamos um estilo a um ou mais, mas não a todos os elementos de uma página da web?
+R: com o seletor de classe
+
+O que forma uma regra?
+R: Um seletor e suas propriedades formam uma regra CSS
+
+
+- seletor de classe: 
+
+.completed {
+ text-decoration: line-through;
+}
+
+-  para aplicar a regra a todos os elementos com seus classatributos definidos como....
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Secao 01: Folha de Estilo e seletores básicos Pt.04
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
