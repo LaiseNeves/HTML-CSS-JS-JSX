@@ -5,6 +5,8 @@ Comandos e coisas úteis sobre HTML, CSS, JS, React (JSX) etc
 
 - Conversos de HTML para JSX: https://transform.tools/html-to-jsx
 
+- Otimizar arquivos SVG: https://jakearchibald.github.io/svgomg/ 
+
 
 👾 Jogos que ensinam: 
 
@@ -20,3 +22,4 @@ Comandos e coisas úteis sobre HTML, CSS, JS, React (JSX) etc
 - https://chakra-ui.com/
 
 - https://mui.com/material-ui/
+- 
