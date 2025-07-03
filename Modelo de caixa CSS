@@ -1,0 +1,50 @@
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+O Modelo de caixa CSS:
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+
+- Todos os elementos HTML podem ser considerados caixas. 
+
+- Em CSS, o termo "modelo de caixa" é usado quando se fala em design e layout.
+
+- O modelo de caixa CSS é essencialmente uma caixa que envolve cada elemento HTML. Ele consiste em: conteúdo (content), preenchimento (padding), bordas (border) e margens (margin). 
+
++-------------------------------+
+|           Margin             |
+|  +------------------------+  |
+|  |        Border          |  |
+|  |  +------------------+  |  |
+|  |  |     Padding      |  |  |
+|  |  |  +------------+  |  |  |
+|  |  |  |  Content    |  |  |  |
+|  |  |  +------------+  |  |  |
+|  |  +------------------+  |  |
+|  +------------------------+  |
++-------------------------------+
+
+*Obs: (o nome desse estilo de escrita é esquema visual em ASCI). 
+
+- Explicação das diferentes partes:
+    Conteúdo - O conteúdo da caixa, onde aparecem o texto e as imagens:
+    Padding - Limpa uma área ao redor do conteúdo. O preenchimento é transparente.
+    Borda - Uma borda que circunda o preenchimento e o conteúdo
+    Margem - Limpa uma área fora da borda. A margem é transparente.
+
+- O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre eles. 
+
+- Demonstração do modelo de caixa:
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
