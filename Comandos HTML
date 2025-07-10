@@ -1,6 +1,61 @@
 Comandos: 
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________
+📝 Tags de Texto em HTML
+_________________________________________________________________________________________________________________________________________________
+
+🧱 Estruturação de texto
+<p> — Parágrafo
+
+<h1> a <h6> — Títulos (do mais importante ao menos importante)
+
+<br> — Quebra de linha (não precisa de fechamento)
+
+<hr> — Linha horizontal de separação
+
+✍️ Formatação / Estilo de texto
+<strong> — Texto em negrito semântico (dá ênfase importante)
+
+<b> — Texto em negrito visual (sem ênfase semântica)
+
+<em> — Texto em itálico semântico (ênfase leve)
+
+<i> — Texto em itálico visual (sem ênfase semântica)
+
+<u> — Texto sublinhado
+
+<mark> — Texto marcado (como marca-texto)
+
+<small> — Texto em tamanho menor
+
+<del> — Texto riscado
+
+<ins> — Texto inserido, geralmente com sublinhado
+
+<sub> — Texto em subscrito (ex: H₂O)
+
+<sup> — Texto em sobrescrito (ex: x²)
+
+🧾 Citações e referências
+<blockquote> — Citação em bloco
+
+<q> — Citação curta, geralmente entre aspas
+
+<cite> — Referência de fonte (ex: nome de livro ou filme)
+
+<abbr> — Abreviação com explicação (ex: <abbr title="HyperText Markup Language">HTML</abbr>)
+
+<code> — Texto de código (monoespaçado)
+
+<pre> — Texto pré-formatado (mantém espaços e quebras de linha)
+
+<kbd> — Entrada de teclado (ex: Ctrl + C)
+
+<samp> — Saída de um programa
+
+<var> — Representa uma variável
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
 Bases:
 ____________________________________________________________________________________________________________________________________________________________________________________________________________
 <!DOCTYPE html>
