@@ -1,0 +1,9 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FAZER REQUISICOES COM AXIOS 
+
+- Usando TS
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Usar Axios com TypeScript para fazer requisições no frontend é uma prática comum e recomendada. O Axios é uma biblioteca JavaScript popular para fazer requisições HTTP e o TypeScript adiciona tipagem estática, o que ajuda a evitar 
+erros e aumenta a robustez do código. 
