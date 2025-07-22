@@ -165,3 +165,23 @@ async function fetchDataAsync() {
   }
 }
 
+_______________________________________________________________________________________________________________________________________________
+
+
+
+useEffect e useState são funções do React:
+
+useState: cria variáveis que mudam com o tempo.
+
+useEffect: executa algo assim que o componente carrega.
+
+______________________________________________________________________________________________________________________________________________
+
+sites otimos com tudo bem explicadinho: 
+
+https://www.alura.com.br/artigos/requisicoes-http-utilizando-axios?srsltid=AfmBOoqeaZi-LwACEabXw9SjO_IXFnugigWP1Z7_qVGYqDp5p-iUCgow 
+
+
+
+
+
