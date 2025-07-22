@@ -1,9 +1,167 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 FAZER REQUISICOES COM AXIOS 
-
-- Usando TS
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+---> Usando TS
 
-Usar Axios com TypeScript para fazer requisições no frontend é uma prática comum e recomendada. O Axios é uma biblioteca JavaScript popular para fazer requisições HTTP e o TypeScript adiciona tipagem estática, o que ajuda a evitar 
-erros e aumenta a robustez do código. 
+- Usar Axios com TypeScript para fazer requisições no frontend é uma prática comum e recomendada. O Axios é uma biblioteca JavaScript popular para fazer requisições HTTP 
+e o TypeScript adiciona tipagem estática, o que ajuda a evitar erros e aumenta a robustez do código. E o torna mais seguro. 
+
+
+Para fazer requisições com Axios em TypeScript você precisa: 
+1. primeiro instalar a biblioteca: npm install axios. 
+2. Em seguida, você pode usar o axios para fazer chamadas GET, POST, PUT, DELETE e outras. 
+
+
+Outros métodos:
+axios.put(url, data): Atualiza um recurso.
+axios.delete(url): Deleta um recurso.
+axios.patch(url, data): Atualiza parcialmente um recurso.
+axios.head(url): Obtém os cabeçalhos de resposta sem o corpo.
+axios.options(url): Obtém as opções de comunicação para um recurso
+
+___________________________________________________________________________________________________________________________________________________
+Exemplo básico de requisição GET:
+___________________________________________________________________________________________________________________________________________________
+import axios from 'axios';
+
+async function fetchData() {
+  try {
+    const response = await axios.get('https://rickandmortyapi.com/api/character');
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+fetchData();
+
+
+
+___________________________________________________________________________________________________________________________________________________
+Exemplo básico de requisição POST:
+__________________________________________________________________________________________________________________________________________________
+
+import axios from 'axios';
+
+async function postData() {
+  try {
+    const response = await axios.post('https://rickandmortyapi.com/api/character', {
+      name: 'Morty',
+      status: 'alive',
+    });
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+postData();
+
+
+
+___________________________________________________________________________________________________________________________________________________
+Exemplo básico de requisição PUT:
+__________________________________________________________________________________________________________________________________________________
+
+
+
+___________________________________________________________________________________________________________________________________________________
+Exemplo básico de requisição DELETE:
+__________________________________________________________________________________________________________________________________________________
+
+
+
+___________________________________________________________________________________________________________________________________________________
+Tipagem com TypeScript:
+__________________________________________________________________________________________________________________________________________________
+
+---> Para tipar as respostas do Axios, você pode usar interfaces:
+
+interface Character {
+  id: number;
+  name: string;
+  status: string;
+  // ... outras propriedades
+}
+
+async function fetchDataWithType() {
+  try {
+    const response = await axios.get<Character[]>('https://rickandmortyapi.com/api/character');
+    const characters: Character[] = response.data;
+    console.log(characters[0].name);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+
+
+___________________________________________________________________________________________________________________________________________________
+Configuração global:
+__________________________________________________________________________________________________________________________________________________
+
+---> Você pode configurar o Axios globalmente para adicionar cabeçalhos, baseURL, etc.: 
+
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: 'https://rickandmortyapi.com/api',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY',
+  },
+});
+
+async function fetchDataWithConfig() {
+  try {
+    const response = await api.get('/character');
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+
+
+___________________________________________________________________________________________________________________________________________________
+Interceptadores:
+__________________________________________________________________________________________________________________________________________________
+
+---> Axios permite interceptar requisições e respostas: 
+
+api.interceptors.request.use(
+  (config) => {
+    console.log('Request interceptor:', config);
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+api.interceptors.response.use(
+  (response) => {
+    console.log('Response interceptor:', response);
+    return response;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+
+
+___________________________________________________________________________________________________________________________________________________
+Exemplo com async/await:
+__________________________________________________________________________________________________________________________________________________
+
+async function fetchDataAsync() {
+  try {
+    const response = await axios.get('https://rickandmortyapi.com/api/character');
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
