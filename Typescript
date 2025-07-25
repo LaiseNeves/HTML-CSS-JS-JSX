@@ -1,0 +1,43 @@
+******************************************************************************************************************************************************************************************************************************************
+TYPESCRIPT
+******************************************************************************************************************************************************************************************************************************************
+
+---> Typescript é uma linguagem de programacao fortemente tipada que se baseia em JavaScript.
+
+---> é uma "variação" ou "variação" de JavaScript
+
+---> O TypeScript adiciona sintaxe adicional ao JavaScript para oferecer uma integração mais estreita com o seu editor . Identifica erros logo no início do seu editor.
+
+---> O código TypeScript é convertido em JavaScript, que é executado em qualquer lugar onde o JavaScript seja executado.
+
+---> O objetivo do TypeScript é ser um verificador de tipos estático para programas JavaScript – em outras palavras, uma ferramenta que roda antes do seu código ser executado (estático) e garante que os tipos do programa 
+    estejam corretos (verificados).
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+DESCREVA OS SEUS DADOS
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+---> Descreva a forma dos objetos e funções no seu código.
+
+interface Account {
+  id: number
+  displayName: string
+  version: 1
+}
+ 
+function welcome(user: Account) {
+  console.log(user.id)
+}
+
+-----------------------------------------
+
+type Result = "pass" | "fail"
+ 
+function verify(result: Result) {
+  if (result === "pass") {
+    console.log("Passed")
+  } else {
+    console.log("Failed")
+  }
+}
+
