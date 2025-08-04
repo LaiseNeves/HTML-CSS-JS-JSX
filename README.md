@@ -5,7 +5,9 @@ Comandos e coisas úteis sobre HTML, CSS, JS, React (JSX) etc
 
 - Conversos de HTML para JSX: https://transform.tools/html-to-jsx
 
-- Otimizar arquivos SVG: https://jakearchibald.github.io/svgomg/ 
+- Otimizar arquivos SVG: https://jakearchibald.github.io/svgomg/
+
+- DevTools https://developer.chrome.com/blog/new-in-devtools-138?utm_source=devtools&utm_campaign=stable&hl=pt-br 
 
 
 👾 Jogos que ensinam: 
