@@ -29,3 +29,7 @@ Comandos e coisas úteis sobre HTML, CSS, JS, React (JSX) etc
 🌐 Sites Interessantes: 
 
 - https://css-tricks.com/accessible-svgs/
+
+- https://www.w3schools.com/cssref/css3_pr_word-wrap.php
+
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
