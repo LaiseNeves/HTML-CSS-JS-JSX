@@ -7,7 +7,9 @@ Comandos e coisas úteis sobre HTML, CSS, JS, React (JSX) etc
 
 - Otimizar arquivos SVG: https://jakearchibald.github.io/svgomg/
 
-- DevTools https://developer.chrome.com/blog/new-in-devtools-138?utm_source=devtools&utm_campaign=stable&hl=pt-br 
+- DevTools https://developer.chrome.com/blog/new-in-devtools-138?utm_source=devtools&utm_campaign=stable&hl=pt-br
+
+- Paletas de Cores https://colorhunt.co/  
 
 
 👾 Jogos que ensinam: 
