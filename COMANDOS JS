@@ -1,0 +1,19 @@
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+COMANDOS JS
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1. Funcao para juntar palavras 
+
+function smash(words) {
+  return words.join(" ");
+}
+
+console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+
+
+- É a forma mais simples e direta de transformar um array de palavras em uma frase. 
+- O método .join() é próprio dos arrays em JavaScript.
+- Ele junta todos os elementos de um array em uma única string.
+- O que você passa dentro dos parênteses (" ") é o separador entre os elementos.
+- exercicio: https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/javascript 
+
