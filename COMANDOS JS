@@ -2,7 +2,47 @@ ________________________________________________________________________________
 COMANDOS JS
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-1. Funcao para juntar palavras 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Variaveis tipos: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+let --->
+const ---> 
+var ---> 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ESTRUTURA FUNCAO SIMPLES:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function nomeDaFuncao (parametro1, parametro2) {
+  // corpo da funcao: instrucoes a serem executadas
+  let resultado = parametro1 + parametro2;
+  return resultado; // Retorna o valor da variável resultado
+}
+
+Explicação dos componentes
+- function: A palavra-chave que declara uma função. 
+- nomeDaFuncao: O nome que você dá à função, por exemplo, soma ou calcularTotal. 
+- (): Parênteses que contêm os parâmetros que a função pode receber. Se não houver parâmetros, eles ficam vazios. 
+- {}: Chaves que definem o bloco de código (o corpo) da função. 
+- return: A instrução que encerra a função e devolve um valor para quem a chamou. 
+- valor (ou expressão): O valor que a função deve "devolver". Pode ser um número, uma string, um array, um objeto, ou até o resultado de uma expressão. 
+
+Exemplo prático
+// Define uma função que recebe dois números e retorna a soma deles
+function somar(a, b) {
+  return a + b; // Retorna o resultado da soma
+}
+
+// Chama a função e armazena o resultado numa variável
+let resultadoSoma = somar(5, 3);
+
+// Exibe o resultado no console
+console.log(resultadoSoma); // Saída: 8
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.1. Funcao para juntar palavras 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 function smash(words) {
   return words.join(" ");
