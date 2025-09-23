@@ -227,15 +227,57 @@ console.log(total);
 JAVASCRIPT - SEÇÃO 2. TIPOS E COMPARACOES 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
+xxxx
 
 
 
+_________________________________________________________________________________________________________________________________________________________
+PARAMETROS:
+_________________________________________________________________________________________________________________________________________________________
+
+Deve colocar um parâmetro numa função JavaScript quando esta precisa de receber dados externos para executar a sua lógica ou para se tornar 
+mais adaptável e reutilizável. 
+
+Se a função realiza sempre a mesma tarefa sem variar os dados, pode não precisar de parâmetros. 
+
+---> Quando usar Parametros: 
+ - Diferentes dados para a mesma tarefa: Se a sua função precisa de realizar a mesma ação, mas com valores diferentes cada vez que é chamada, 
+   deve usar um parâmetro. Por exemplo, uma função para somar pode precisar de dois números como parâmetros. 
+ - Adaptabilidade e Reutilização: Parâmetros tornam a função mais versátil, permitindo que a mesma lógica seja aplicada a diferentes cenários 
+   sem alterar o código da função. 
+ - Passar informações externas: A função precisa de dados que não estão definidos internamente. Por exemplo, um parâmetro pode ser um objeto 
+   HTML para ser manipulado. 
+
+---> Quando NÃO usar Parametros: 
+ - Função com lógica fixa: Se a função executa sempre os mesmos passos sem necessidade de input externo, ela não precisa de parâmetros.
+ - Valores constantes dentro da função: Se os dados necessários para a função estão já definidos e não vão mudar, eles podem ser declarados diretamente dentro 
+   da função, sem serem passados como parâmetros.
+
+---> Compreendendo Parâmetros e Argumentos:
+ 1. PARAMETRO:  É a variável declarada nos parênteses quando a função é definida
+ 2. ARGUMENTOS:  É o valor real que é passado para a função quando ela é chamada
+
+1. É a variável declarada nos parênteses quando a função é definida (ex: numero1 em function somar(numero1, numero2)). 
+2. É o valor real que é passado para a função quando ela é chamada (ex: 2 e 3 em somar(2, 3)). 
 
 
 
+---> Exemplo Prático: 
+
+- Com parâmetro: Uma função que exibe uma mensagem precisa de um parâmetro mensagem para saber o que exibir
+
+    function exibirMensagem(mensagem) {
+        alert(mensagem);
+    }
+    exibirMensagem("Olá!"); // O argumento "Olá!" é passado para o parâmetro mensagem
 
 
+- Sem parâmetro: Uma função que apenas diz "Olá!" sem nenhuma variação. 
 
+    function saudacaoSimples() {
+        alert("Olá!");
+    }
+    saudacaoSimples(); // Não é passado nenhum argumento
 
 
 
