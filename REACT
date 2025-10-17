@@ -278,4 +278,97 @@ Importando e Exportando Componentes
 - Isso permite que você mantenha seus arquivos fáceis de explorar e reutiliza-los em mais lugares.
 
 
+________________________________________________________________________________________________________________________________________________________________
+COMO USAR/INVOCAR UM COMPONENTE
+________________________________________________________________________________________________________________________________________________________________
+
+Para invocar (ou usar) um componente em um código React TSX, você precisa seguir dois passos principais: 
+1. importar o componente e, depois, 
+2. renderizá-lo usando a sintaxe de tag JSX. 
+
+
+1 Criar o componente que será invocado
+Primeiro, você deve ter um componente funcional (que pode receber propriedades, ou props). Por exemplo, crie um arquivo chamado Botao.tsx:
+
+tsx
+// src/components/Botao.tsx
+import React from 'react';
+
+// Define a interface para as propriedades do componente
+interface BotaoProps {
+  texto: string;
+  onClick: () => void;
+}
+
+// Define o componente funcional com a tipagem das props
+const Botao = ({ texto, onClick }: BotaoProps) => {
+  return (
+    <button onClick={onClick}>
+      {texto}
+    </button>
+  );
+};
+
+export default Botao;
+
+
+Neste exemplo:
+interface BotaoProps define a forma das propriedades que o componente aceita.
+const Botao é o componente funcional que recebe essas propriedades.
+export default Botao permite que este componente seja importado em outros arquivos. 
+
+2. Importar e usar o componente
+Agora, em outro arquivo TSX (por exemplo, App.tsx), você pode importar e usar o componente Botao. 
+
+// src/App.tsx
+import React from 'react';
+// Importa o componente Botao do arquivo Botao.tsx
+import Botao from './components/Botao';
+
+const App = () => {
+  const handleClick = () => {
+    alert('Botão clicado!');
+  };
+
+  return (
+    <div>
+      <h1>Exemplo de Componente</h1>
+      {/* Invoca o componente Botao usando a sintaxe de tag JSX */}
+      <Botao texto="Clique em Mim" onClick={handleClick} />
+    </div>
+  );
+};
+
+export default App;
+
+Explicação detalhada do App.tsx:
+---> Importação: A linha import Botao from './components/Botao'; traz o componente Botao para o arquivo App.tsx. O caminho ('./components/Botao') deve ser relativo ao arquivo atual.
+
+---> Invocação (Renderização): Dentro do return do componente App, a linha <Botao texto="Clique em Mim" onClick={handleClick} /> invoca (ou usa) o componente.
+-->texto="Clique em Mim": Passa a string "Clique em Mim" para a propriedade texto do componente Botao.
+--> onClick={handleClick}: Passa a função handleClick para a propriedade onClick do componente Botao. Isso permite que o componente Botao execute a função definida em App
+
+---------------------------------------------------------------------------------------------------------------------
+Resumo do processo
+---------------------------------------------------------------------------------------------------------------------
+Criação do Componente: Defina o componente em um arquivo (.tsx), incluindo a tipagem das propriedades (se houver).
+Exportação: Use export default para tornar o componente acessível a outros arquivos.
+Importação: No arquivo onde você quer usar o componente, use import para referenciá-lo.
+Renderização: Insira a tag do componente (<NomeDoComponente />) na sua árvore JSX, passando as propriedades necessárias. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
