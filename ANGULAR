@@ -209,9 +209,52 @@ Rotas
 No React: react-router-dom.
 No Angular: RouterModule.
 
+(ts)
+const routes: Routes = [
+  { path: 'home', component: HomeComponent }
+];
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Resumo simples comparando Angular e React
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+| Conceito     | React            | Angular                        |
+| ------------ | ---------------- | ------------------------------ |
+| Base         | Biblioteca       | Framework                      |
+| Componentes  | Funções + JSX    | Classes + HTML separado        |
+| Estado       | useState, etc    | Propriedades normais da classe |
+| Templates    | JSX              | HTML + binding                 |
+| Organização  | você decide      | Angular decide                 |
+| Lógica geral | hooks / props    | services / DI / decoradores    |
+| Estilização  | CSS-in-JS ou CSS | CSS separado por componente    |
+| Rotas        | react-router     | RouterModule                   |
+| Comunicação  | props            | @Input/@Output                 |
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A lógica
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O Angular é baseado em 3 pilares:
+
+---> 1. Componente (visão + lógica)
+
+Template (HTML)
++
+Classe (TS)
++
+Estilo (CSS)
+
+
+---> 2. Service (lógica da aplicação)
+
+Dados, APIs, regras.
+
+
+---> 3. Módulo (organização da aplicação)
+
+Diz quem pertence ao projeto.
 
 
 
