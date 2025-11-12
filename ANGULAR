@@ -1,0 +1,229 @@
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ANGULAR:
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+- Angular é um FRAMEWORK = ele já traz tudo pronto e organizado
+- React é uma BIBLIOTECA = você monta tudo
+- Vue.JS é um FRAMEWORK = ele já traz tudo pronto e organizado
+
+Por isso, a estrutura do Angular é mais "engessada", mas também mais guiada.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONTEXTUALIZANDO: FRAMEWORK
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+É uma estrutura pré-definida de código, regras e ferramentas que simplifica e agiliza o desenvolvimento de software, oferecendo um "esqueleto" pronto para projetos. 
+Em vez de construir cada componente do zero, os desenvolvedores utilizam frameworks para se concentrar nas funcionalidades únicas da aplicação, aproveitando códigos, padrões e componentes já testados.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Projeto Angular é organizado em módulos
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---> O Angular é modular.
+---> Tudo começa no AppModule (app.module.ts).
+
+@NgModule({
+  declarations: [AppComponent, HeaderComponent, TodoComponent],    // Componentes
+  imports: [BrowserModule, FormsModule],                           // imports
+  providers: [],                                                   // componente incial ....
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+
+
+O módulo diz:
+“Esses são meus componentes”
+“Esses são meus imports”
+“Esse é o componente inicial do projeto”
+
+---> É como se fosse o “índice” da sua aplicação React, mas muito mais organizado.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Em Angular, cada componente tem 4 arquivos
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Quando você cria um componente:
+  (css)
+  ng generate component header
+
+Ele cria:
+  (pgsql)
+  header.component.ts   → lógica
+  header.component.html → estrutura (template)
+  header.component.css  → estilo
+  header.component.spec.ts → teste (pode ignorar agora)
+
+React junta tudo em um arquivo (JSX). Angular separa.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A lógica do componente (TS) é uma classe
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+React usa funções.
+
+Angular usa classes com um decorador @Component.
+
+Exemplo Angular:
+
+@Component({                                                ----> @component ({
+  selector: 'app-header',
+  templateUrl: './header.component.html'
+})
+export class HeaderComponent {                              ----> export class 
+  title = 'Meu Site';
+
+  changeTitle() {
+    this.title = 'Outro título';
+  }
+}
+
+
+React equivale a:
+
+export default function Header() {                        ----> export default e funcao
+  const [title, setTitle] = useState('Meu Site');
+
+  return (                                                ---> return
+    <div>{title}</div>
+  );
+}
+
+!! Angular não tem return() — você não retorna JSX.
+O HTML fica em outro arquivo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O template (HTML) é “inteligente”
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O Angular transforma seu HTML em algo dinâmico usando: 
+  - Interpolação
+  - Event binding
+  - Property binding
+  - Diretivas (como if e for)
+
+Isso faz o HTML do Angular ser parecido com o JSX, mas mais limpo e organizad
+
+1. Interpolação: 
+  <h1>{{ title }}</h1>
+
+2. Event binding:
+  <button (click)="changeTitle()">Trocar</button>
+
+3. Property binding:
+  <img [src]="imageUrl">
+
+4. Diretivas (como if e for):
+  <p *ngIf="isVisible">Apareceu!</p>
+
+  <li *ngFor="let item of items">{{ item }}</li>
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Imports e exports
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- No React você faz:
+
+    import Header from './Header'
+    export default Header
+
+
+- No Angular:
+
+Você sempre exporta a classe do componente:
+
+    export class HeaderComponent {}
+
+E não importa manualmente no App:
+O CLI já adiciona automaticamente no módulo:
+
+declarations: [
+  HeaderComponent
+]
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Services: a alma do Angular
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+No React, você costuma colocar a lógica em:
+
+hooks
+context
+state lifts
+custom hooks
+
+
+No Angular existe o conceito oficial:
+
+---> Service = arquivo para lógica de negócio, dados, API, localStorage, etc.
+
+Exemplo:
+
+(ts)
+@Injectable({                             ----> @componente
+  providedIn: 'root'
+})
+export class UserService {                ----> export 
+  users = ['Ana', 'Maria'];
+
+  getUsers() {
+    return this.users;
+  }
+}
+
+
+E no componente:
+
+constructor(public userService: UserService) {}
+
+
+---> Angular injeta o serviço automaticamente.
+---> É como usar o Context API do React, mas nativo e mais organizado.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Comunicação entre componentes
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- React faz assim:
+    Pai → Filho: props
+    Filho → Pai: callbacks
+
+- Angular faz:
+  --> Pai → Filho
+    usar @Input():
+(ts)
+@Input() title: string = '';
+
+
+
+ --> Filho → Pai
+    usar @Output() + EventEmitter:
+(ts)
+@Output() clicked = new EventEmitter();
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Rotas
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+No React: react-router-dom.
+No Angular: RouterModule.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
